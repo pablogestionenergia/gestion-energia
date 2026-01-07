@@ -28,6 +28,7 @@
             padding: 10px 5%; background: white; 
             box-shadow: 0 4px 20px rgba(0,0,0,0.05);
             position: sticky; top: 0; z-index: 1000;
+            transition: all 0.3s ease; /* Suaviza el cambio de tamaño */
         }
 
         /* CONTENEDOR LOGO + FRASE */
@@ -36,6 +37,7 @@
             align-items: center;
             gap: 45px; 
             text-decoration: none;
+            transition: all 0.3s ease;
         }
 
         /* TU IMAGEN DE LOGO */
@@ -43,6 +45,7 @@
             height: 115px; /* Tamaño normal para PC */
             width: auto; 
             object-fit: contain; 
+            transition: height 0.3s ease;
         }
 
         /* LA FRASE A LA DERECHA */
@@ -55,6 +58,7 @@
             max-width: 600px;
             border-left: 1px solid #ccc;
             padding-left: 25px;
+            transition: opacity 0.3s ease, height 0.3s ease;
         }
 
         /* Botón teléfono */
@@ -63,6 +67,7 @@
             font-weight: 700; font-size: 1.5rem; color: var(--verde-corp);
             padding: 10px 30px; border: 3px solid var(--verde-corp); border-radius: 70px;
             white-space: nowrap;
+            transition: all 0.3s ease;
         }
         .phone-btn svg { width: 34px; height: 34px; fill: var(--whatsapp); }
         .phone-btn:hover { background: var(--verde-corp); color: white; }
@@ -164,6 +169,14 @@
         .contact-bar { background: var(--verde-corp); color: white; padding: 80px 5%; text-align: center; }
         .contact-flex { display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; margin-top: 40px; }
         .contact-item { font-size: 1.3rem; font-weight: 600; display:flex; align-items:center; gap:10px;}
+        
+        /* CORRECCIÓN EMAIL FUERTE */
+        .email-text {
+            word-break: break-all;      /* Rompe la palabra si o si */
+            overflow-wrap: anywhere;    /* Asegura que no desborde */
+            white-space: normal;        /* Permite saltos de línea */
+        }
+
         footer { background: #1a1a1a; color: #555; padding: 40px 5%; text-align: center; font-size: 0.8rem; }
 
         /* --- VERSIÓN MÓVIL --- */
@@ -171,7 +184,7 @@
             header { flex-direction: column; gap: 20px; padding: 20px 5%; }
             .logo-container { flex-direction: column; text-align: center; }
             
-            /* LOGO MÁS GRANDE EN MÓVIL */
+            /* LOGO GRANDE AL INICIO */
             .logo-img { height: 150px; } 
 
             .header-tagline { border-left: none; padding-left: 0; max-width: 100%; border-top: 1px solid #eee; padding-top: 10px; margin-top: 5px; } 
@@ -179,20 +192,39 @@
             .hero-split, .main-content { flex-direction: column; height: auto; }
             .hero-right { height: 350px; }
             .hero-left { padding: 80px 5%; text-align: center; }
-            
-            /* LETRA AJUSTADA PARA QUE NO SE CORTE "RENTABILIDAD" */
             .hero-left h1 { font-size: 2.2rem; } 
-            
             .hero-left p { border-left: none; padding-left: 0; }
             
-            /* NUEVO: Achicar un poco la letra del contacto en el móvil para que entre el email */
-            .contact-item { font-size: 1rem; }
+            .contact-item { 
+                font-size: 0.95rem; 
+                max-width: 100%;    
+                flex-wrap: wrap;    
+                justify-content: center; 
+            }
+
+            /* --- ESTILOS CUANDO HACEMOS SCROLL (Header Compacto) --- */
+            header.compacto {
+                padding: 10px 5%;
+                gap: 0; /* Quita el espacio entre elementos */
+            }
+            
+            /* Ocultar frase y teléfono al bajar */
+            header.compacto .header-tagline,
+            header.compacto .phone-btn {
+                display: none;
+            }
+
+            /* Ajustar logo al bajar */
+            header.compacto .logo-img {
+                height: 60px; /* Logo más pequeño cuando fijado */
+                margin-bottom: 0;
+            }
         }
     </style>
 </head>
 <body>
 
-    <header>
+    <header id="main-header">
         <a href="#" class="logo-container">
             <img src="LOGO_letra fina.jpg" alt="Logo Grupo Gestión" class="logo-img">
             
@@ -276,7 +308,7 @@
             </div>
             <div class="contact-item">
                  <svg style="width:24px;height:24px;fill:white" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5l-8-5V6l8 5l8-5v2z"/></svg>
-                <span style="word-break: break-all;">pablo.gestionenergia@gmail.com</span>
+                <span class="email-text">pablo.gestionenergia@gmail.com</span>
             </div>
         </div>
     </div>
@@ -284,6 +316,20 @@
     <footer>
         <div>GRUPO GESTIÓN 2024 - Todos los derechos reservados</div>
     </footer>
+
+    <script>
+        // Detectar cuando el usuario hace scroll
+        window.onscroll = function() {
+            var header = document.getElementById("main-header");
+            
+            // Si bajamos más de 50px...
+            if (window.scrollY > 50) {
+                header.classList.add("compacto"); // Activamos modo compacto
+            } else {
+                header.classList.remove("compacto"); // Volvemos al modo normal
+            }
+        };
+    </script>
 
 </body>
 </html>
