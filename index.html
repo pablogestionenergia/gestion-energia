@@ -233,7 +233,9 @@
             .btn, .contact-item, .linkedin-link { display: flex; width: 100%; }
             .hero-ctas, .contact-flex { flex-direction: column; gap: 14px; }
             .modelo .btn { align-self: stretch; }
-            .contact-item { font-size: 1rem; padding: 14px 20px; }
+            .contact-item { font-size: 1rem; padding: 14px; gap: 8px; }
+            /* El email cabe en una sola línea: el tamaño se ajusta al ancho del teléfono */
+            .contact-item .email { font-size: clamp(0.8rem, calc((100vw - 110px) / 16.2), 1rem); }
             .linkedin-link { justify-content: center; min-height: 52px; border: 2px solid var(--verde); border-radius: 6px; padding: 12px 20px; }
             .linkedin-link:hover { background: var(--verde); color: #fff; }
 
