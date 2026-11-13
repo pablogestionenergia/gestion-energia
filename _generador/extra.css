@@ -13,7 +13,7 @@
         .menu-btn svg { width: 20px; height: 20px; stroke: currentColor; stroke-width: 2.2; fill: none; }
         header.open .menu-btn { background: var(--verde); color: #fff; }
 
-        @media (max-width: 1560px) { .brand-tag { display: none; } }
+        .brand-tag { display: none; }  /* el lema no cabe junto al menú; ya aparece en el pie */ .brand { flex-shrink: 0; }
         @media (max-width: 1320px) { .nav-main { gap: 18px; font-size: 0.9rem; } .header-right { gap: 16px; } }
         @media (max-width: 1240px) {
             .menu-btn { display: inline-flex; }
