@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pablogestionenergia.github.io/gestion-energia/sitemap.xml

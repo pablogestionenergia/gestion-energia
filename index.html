@@ -1,450 +1,141 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestión Energía | Luz y gas para inmobiliarias</title>
-    <meta name="description" content="Gestión Energía tramita las altas y cambios de titular de luz y gas de tus operaciones inmobiliarias y te paga una comisión por cada alta. Servicio B2B para inmobiliarias y administradores de fincas.">
-    <link rel="canonical" href="https://pablogestionenergia.github.io/gestion-energia/">
-
-    <!-- Vista previa al compartir el enlace (LinkedIn, WhatsApp) -->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Gestión Energía">
-    <meta property="og:title" content="Gestión Energía | Luz y gas para inmobiliarias">
-    <meta property="og:description" content="Nos ocupamos de la luz y el gas de cada operación. Tú cobras una comisión por cada alta.">
-    <meta property="og:url" content="https://pablogestionenergia.github.io/gestion-energia/">
-    <meta property="og:image" content="https://pablogestionenergia.github.io/gestion-energia/og-image.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:locale" content="es_ES">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <link rel="icon" type="image/png" href="data:image/png;base64,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">
-    <meta name="theme-color" content="#153e32">
-
-    <link rel="preload" href="montserrat.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="open-sans.woff2" as="font" type="font/woff2" crossorigin>
-
-    <style>
-        /* --- TIPOGRAFÍA AUTOALOJADA ---
-           Las fuentes se sirven desde la propia web (archivos .woff2 junto a esta página), no desde Google Fonts:
-           cargan igual en iPhone, Android, navegadores internos de LinkedIn/WhatsApp y redes
-           corporativas que bloquean servicios externos. Si algo fallara, entra la fuente del sistema. */
-        @font-face {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 500 800;
-            font-display: swap;
-            src: url('montserrat.woff2') format('woff2');
-        }
-        @font-face {
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 400 700;
-            font-display: swap;
-            src: url('open-sans.woff2') format('woff2');
-        }
-
-        :root {
-            --verde: #153e32;
-            --verde-oscuro: #0e2a22;
-            --dorado: #C5A059;          /* decorativo y fondos; texto dorado solo sobre verde */
-            --dorado-claro: #d4b26f;
-            --dorado-texto: #86672a;    /* dorado para texto sobre fondos claros (contraste ≥ 4,5:1) */
-            --crema: #faf8f3;
-            --gris: #f4f4f2;
-            --texto: #24312c;
-            --texto-suave: #5d6b66;
-            --whatsapp: #25D366;
-            --whatsapp-acc: #1a7f45;    /* verde WhatsApp oscurecido: icono blanco con contraste 5:1 */
-            --radio: 10px;
-            --header-h: 108px;
-            --font-titulos: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            --font-texto: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-        }
-
-        * { box-sizing: border-box; }
-        html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h) + 8px); -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
-        body { font-family: var(--font-texto); font-size: 1rem; margin: 0; color: var(--texto); line-height: 1.6; background: #fff; overflow-x: hidden; }
-        h1, h2, h3, h4 { font-family: var(--font-titulos); margin: 0; line-height: 1.2; }
-        p { margin: 0; }
-        a { color: inherit; text-decoration: none; transition: color 0.25s, background-color 0.25s, border-color 0.25s, transform 0.25s; }
-        img { max-width: 100%; display: block; }
-
-        /* --- ACCESIBILIDAD --- */
-        .sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
-        .skip-link { position: absolute; left: 12px; top: -100px; z-index: 2000; background: var(--verde-oscuro); color: #fff; font-family: var(--font-titulos); font-weight: 700; padding: 14px 20px; border-radius: 6px; }
-        .skip-link:focus { top: 12px; }
-        /* Foco visible al navegar con teclado: oscuro sobre fondos claros, blanco sobre fondos verdes */
-        :focus-visible { outline: 3px solid var(--verde-oscuro); outline-offset: 3px; border-radius: 4px; }
-        .on-dark :focus-visible { outline-color: #fff; }
-        .on-dark .modelo :focus-visible { outline-color: var(--verde-oscuro); }
-        main:focus { outline: none; }
-
-        .wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
-        .section { padding: 96px 0; }
-        .eyebrow { font-family: var(--font-titulos); font-size: 0.85rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--dorado-texto); margin-bottom: 14px; }
-        .section-title { font-size: 2.3rem; font-weight: 800; color: var(--verde); margin-bottom: 18px; letter-spacing: -0.5px; }
-        .section-lead { font-size: 1.1rem; color: var(--texto-suave); max-width: 640px; }
-        .center { text-align: center; }
-        .center .section-lead { margin: 0 auto; }
-
-        /* --- BOTONES --- */
-        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; font-family: var(--font-titulos); font-weight: 700; font-size: 1rem; line-height: 1.3; letter-spacing: 0.3px; text-align: center; padding: 14px 30px; border-radius: 6px; cursor: pointer; }
-        .btn-oro { background: var(--dorado); color: var(--verde-oscuro); box-shadow: 0 10px 24px rgba(0,0,0,0.18); }
-        .btn-oro:hover { background: var(--dorado-claro); transform: translateY(-2px); }
-        .btn-linea { border: 2px solid rgba(255,255,255,0.75); color: #fff; }
-        .btn-linea:hover { border-color: #fff; background: rgba(255,255,255,0.1); }
-        .btn-verde { background: var(--verde); color: #fff; }
-        .btn-verde:hover { background: var(--verde-oscuro); transform: translateY(-2px); }
-        .btn svg { width: 20px; height: 20px; fill: currentColor; flex-shrink: 0; }
-
-        /* --- HEADER --- */
-        header { position: sticky; top: 0; z-index: 1000; background: rgba(255,255,255,0.97); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); box-shadow: 0 2px 18px rgba(0,0,0,0.06); }
-        .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; height: var(--header-h); }
-        .brand { display: flex; align-items: center; gap: 22px; }
-        .brand img { height: 88px; width: auto; }
-        .brand-tag { font-size: 1rem; color: var(--texto-suave); font-weight: 600; line-height: 1.35; border-left: 1px solid #d8d8d8; padding-left: 22px; }
-        nav { display: flex; align-items: center; gap: 30px; font-family: var(--font-titulos); font-weight: 600; font-size: 0.95rem; color: var(--verde); }
-        nav .nav-link { padding: 10px 0; }
-        nav a:not(.phone-btn):hover { color: var(--dorado-texto); }
-        .phone-btn { display: inline-flex; align-items: center; gap: 10px; min-height: 48px; font-weight: 700; font-size: 1.05rem; color: var(--verde); padding: 9px 22px; border: 2px solid var(--verde); border-radius: 60px; white-space: nowrap; }
-        .phone-btn svg { width: 24px; height: 24px; fill: var(--whatsapp-acc); }
-        .phone-btn:hover { background: var(--verde); color: #fff; }
-        .phone-btn:hover svg { fill: #fff; }
-
-        /* --- HERO --- */
-        .hero { display: flex; min-height: 640px; }
-        .hero-left { flex: 1; background: linear-gradient(135deg, var(--verde) 0%, var(--verde-oscuro) 100%); color: #fff; display: flex; flex-direction: column; justify-content: center; padding: 80px 6% 80px max(24px, calc((100vw - 1180px) / 2 + 24px)); }
-        .hero h1 { font-size: 3.2rem; font-weight: 800; letter-spacing: -1px; margin-bottom: 26px; }
-        .hero h1 span { color: var(--dorado); }
-        .hero-text { font-size: 1.2rem; color: rgba(255,255,255,0.94); max-width: 540px; border-left: 3px solid var(--dorado); padding-left: 20px; margin-bottom: 40px; }
-        .hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; }
-        .hero-right { flex: 1.1; background: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat; }
-
-        /* --- COMERCIALIZADORAS --- */
-        .logos { padding: 48px 0; border-bottom: 1px solid #eee; text-align: center; }
-        .logos-title { font-family: var(--font-titulos); font-size: 0.9rem; color: var(--texto-suave); letter-spacing: 2px; text-transform: uppercase; font-weight: 700; margin-bottom: 30px; }
-        .logos-grid { display: flex; justify-content: center; align-items: center; gap: 56px; flex-wrap: wrap; list-style: none; margin: 0; padding: 0; }
-        .logos-grid img { height: 46px; width: auto; filter: grayscale(100%); opacity: 0.8; transition: 0.3s; }
-        .logos-grid img:hover { filter: none; opacity: 1; }
-
-        /* --- BENEFICIOS --- */
-        .beneficios { background: var(--crema); }
-        .cards-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 54px; }
-        .card { background: #fff; padding: 38px 32px; border-radius: var(--radio); box-shadow: 0 6px 20px rgba(0,0,0,0.04); position: relative; overflow: hidden; transition: 0.3s; }
-        .card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: var(--dorado); }
-        .card:hover { transform: translateY(-6px); box-shadow: 0 18px 36px rgba(0,0,0,0.08); }
-        .icon-gold { width: 46px; height: 46px; stroke: var(--dorado); stroke-width: 1.5; fill: none; margin-bottom: 22px; }
-        .card h3 { font-size: 1.25rem; color: var(--verde); margin-bottom: 12px; font-weight: 700; }
-        .card p { color: var(--texto-suave); }
-
-        /* --- CÓMO TRABAJAMOS --- */
-        .pasos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 56px; counter-reset: paso; list-style: none; padding: 0; }
-        .paso { position: relative; padding-top: 70px; }
-        .paso::before { counter-increment: paso; content: counter(paso); position: absolute; top: 0; left: 0; width: 52px; height: 52px; border-radius: 50%; background: var(--verde); color: var(--dorado); font-family: var(--font-titulos); font-weight: 800; font-size: 1.4rem; display: flex; align-items: center; justify-content: center; }
-        .paso:not(:last-child)::after { content: ''; position: absolute; top: 26px; left: 68px; right: -24px; height: 2px; background: linear-gradient(90deg, var(--dorado) 0%, rgba(197,160,89,0.15) 100%); }
-        .paso h3 { font-size: 1.2rem; color: var(--verde); margin-bottom: 10px; }
-        .paso p { color: var(--texto-suave); }
-
-        /* --- MODELOS --- */
-        .modelos { background: linear-gradient(135deg, var(--verde) 0%, var(--verde-oscuro) 100%); color: #fff; }
-        .modelos .section-title { color: #fff; }
-        .modelos .section-lead { color: rgba(255,255,255,0.85); }
-        .modelos .eyebrow { color: var(--dorado); }
-        .modelos-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-top: 54px; }
-        .modelo { background: #fff; color: var(--texto); border-radius: var(--radio); padding: 42px 38px; display: flex; flex-direction: column; }
-        .modelo-tag { font-family: var(--font-titulos); font-size: 0.82rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--dorado-texto); margin-bottom: 8px; }
-        .modelo h3 { font-size: 1.8rem; color: var(--verde); margin-bottom: 14px; }
-        .modelo-intro { color: var(--texto-suave); margin-bottom: 26px; }
-        .roles { border-top: 1px solid #ece9e1; padding-top: 22px; margin-bottom: 26px; display: grid; gap: 16px; }
-        .rol strong { display: block; font-family: var(--font-titulos); font-size: 0.9rem; color: var(--verde); margin-bottom: 2px; }
-        .rol span { color: var(--texto-suave); }
-        .ideal { background: var(--crema); border-left: 3px solid var(--dorado); padding: 14px 18px; border-radius: 4px; font-size: 0.95rem; margin-bottom: 30px; }
-        .modelo .btn { margin-top: auto; align-self: flex-start; }
-        .modelos-nota { text-align: center; margin-top: 34px; color: rgba(255,255,255,0.85); font-size: 1rem; }
-
-        /* --- CLIENTES --- */
-        .clientes { background: var(--gris); }
-        .clients-grid { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; margin: 46px 0 0; padding: 0; list-style: none; }
-        .client-card { background: #fff; width: 280px; height: 150px; display: flex; align-items: center; justify-content: center; border-radius: var(--radio); padding: 18px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); border: 1px solid transparent; transition: 0.3s; }
-        .client-card:hover { border-color: var(--dorado); transform: translateY(-4px); }
-        .client-card img { max-width: 88%; max-height: 88%; object-fit: contain; filter: grayscale(100%); opacity: 0.8; transition: 0.3s; }
-        .client-card:hover img { filter: none; opacity: 1; }
-
-        /* --- SOBRE MÍ --- */
-        .sobre { display: grid; grid-template-columns: 360px 1fr; gap: 64px; align-items: center; }
-        .foto { background: #eaebec; border-radius: var(--radio); overflow: hidden; aspect-ratio: 4 / 5; box-shadow: 0 20px 50px rgba(0,0,0,0.1); }
-        .foto img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
-        .sobre-nombre { font-size: 1.7rem; color: var(--verde); margin-bottom: 4px; }
-        .cargo { color: var(--dorado-texto); font-weight: 700; font-family: var(--font-titulos); font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 24px; }
-        .cita { font-size: 1.3rem; font-style: italic; color: var(--verde); border-left: 3px solid var(--dorado); padding-left: 22px; margin: 0 0 24px; line-height: 1.5; }
-        .sobre p.txt { color: var(--texto-suave); margin-bottom: 28px; max-width: 560px; }
-        .linkedin-link { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-weight: 600; color: var(--verde); border-bottom: 2px solid var(--dorado); padding-bottom: 2px; }
-        .linkedin-link svg { width: 20px; height: 20px; fill: #0a66c2; flex-shrink: 0; }
-        .linkedin-link:hover { color: var(--dorado-texto); }
-
-        /* --- CONTACTO --- */
-        .contacto { background: var(--verde); color: #fff; text-align: center; }
-        .contacto .section-title { color: #fff; }
-        .contacto .section-lead { color: rgba(255,255,255,0.85); margin: 0 auto; }
-        .contact-flex { display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; margin-top: 42px; }
-        .contact-item { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; font-weight: 600; font-size: 1.05rem; padding: 14px 24px; border-radius: 60px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.4); max-width: 100%; overflow-wrap: break-word; }
-        .contact-item .email { min-width: 0; text-align: left; }
-        .contact-item:hover { background: rgba(255,255,255,0.16); }
-        .contact-item svg { width: 22px; height: 22px; fill: var(--dorado); flex-shrink: 0; }
-
-        footer { background: #111a17; color: #a3ada8; padding: 32px 0; text-align: center; font-size: 0.9rem; }
-
-        /* --- WHATSAPP FLOTANTE (móvil) --- */
-        .wa-float { display: none; position: fixed; right: 16px; bottom: 16px; width: 60px; height: 60px; border-radius: 50%; background: var(--whatsapp-acc); border: 2px solid #fff; box-shadow: 0 8px 22px rgba(0,0,0,0.3); align-items: center; justify-content: center; z-index: 1100; }
-        .wa-float svg { width: 30px; height: 30px; fill: #fff; }
-
-        /* --- RESPONSIVE --- */
-        @media (max-width: 1020px) {
-            nav .nav-link { display: none; }
-            .brand-tag { display: none; }
-            .hero h1 { font-size: 2.8rem; }
-        }
-        @media (max-width: 860px) {
-            :root { --header-h: 98px; }
-            .section { padding: 72px 0; }
-            .section-title { font-size: 1.85rem; }
-            .header-inner { justify-content: center; }
-            nav { display: none; }
-            .brand img { height: 78px; }   /* antes 62px */
-            .phone-btn { display: none; }
-            .wa-float { display: flex; }
-            .hero { flex-direction: column; min-height: 0; }
-            .hero-left { padding: 56px 24px 64px; }
-            .hero h1 { font-size: 2.2rem; }
-            .hero-text { font-size: 1.05rem; }
-            .hero-right { min-height: 240px; }
-            .logos-grid { gap: 28px 32px; }
-            .logos-grid img { height: 34px; }
-            .cards-3, .pasos, .modelos-grid { grid-template-columns: 1fr; }
-            .paso::after { display: none; }
-            .modelo { padding: 32px 24px; }
-            .sobre { grid-template-columns: 1fr; gap: 36px; }
-            .foto { max-width: 340px; width: 100%; margin: 0 auto; }
-            .cita { font-size: 1.15rem; }
-
-            /* Todos los CTAs ocupan el ancho del contenedor */
-            .btn, .contact-item, .linkedin-link { display: flex; width: 100%; }
-            .hero-ctas, .contact-flex { flex-direction: column; gap: 14px; }
-            .modelo .btn { align-self: stretch; }
-            .contact-item { font-size: 1rem; padding: 14px; gap: 8px; }
-            /* El email cabe en una sola línea: el tamaño se ajusta al ancho del teléfono */
-            .contact-item .email { font-size: clamp(0.8rem, calc((100vw - 110px) / 16.2), 1rem); }
-            .linkedin-link { justify-content: center; min-height: 52px; border: 2px solid var(--verde); border-radius: 6px; padding: 12px 20px; }
-            .linkedin-link:hover { background: var(--verde); color: #fff; }
-
-            /* Que el botón flotante de WhatsApp no tape el pie de página */
-            footer { padding-bottom: 100px; }
-        }
-        /* Móvil en horizontal: la cabecera deja de ser fija para no comerse la pantalla */
-        @media (max-height: 500px) and (orientation: landscape) {
-            header { position: static; }
-            html { scroll-padding-top: 8px; }
-        }
-        /* Personas que piden reducir el movimiento en su dispositivo */
-        @media (prefers-reduced-motion: reduce) {
-            html { scroll-behavior: auto; }
-            *, *::before, *::after { transition: none !important; animation: none !important; }
-            .btn:hover, .card:hover, .client-card:hover { transform: none; }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestión Energía | Luz y gas para inmobiliarias y administradores de fincas</title>
+<meta name="description" content="Gestionamos las altas y cambios de titular de luz y gas de tus operaciones inmobiliarias y tu agencia cobra una comisión por cada alta. Servicio B2B en toda España.">
+<link rel="canonical" href="https://pablogestionenergia.github.io/gestion-energia/">
+<link rel="alternate" hreflang="es-ES" href="https://pablogestionenergia.github.io/gestion-energia/">
+<link rel="alternate" hreflang="ca-ES" href="https://pablogestionenergia.github.io/gestion-energia/ca/">
+<link rel="alternate" hreflang="en" href="https://pablogestionenergia.github.io/gestion-energia/en/">
+<link rel="alternate" hreflang="x-default" href="https://pablogestionenergia.github.io/gestion-energia/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gestión Energía">
+<meta property="og:title" content="Gestión Energía | Luz y gas para inmobiliarias y administradores de fincas">
+<meta property="og:description" content="Gestionamos las altas y cambios de titular de luz y gas de tus operaciones inmobiliarias y tu agencia cobra una comisión por cada alta. Servicio B2B en toda España.">
+<meta property="og:url" content="https://pablogestionenergia.github.io/gestion-energia/">
+<meta property="og:image" content="https://pablogestionenergia.github.io/gestion-energia/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#153e32">
+<meta name="format-detection" content="telephone=no">
+<link rel="preload" href="montserrat-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="montserrat-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="open-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="site.css?v=2026-11-13">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "@id": "https://pablogestionenergia.github.io/gestion-energia/#empresa", "name": "Gestión Energía", "description": "Servicio B2B para inmobiliarias y administradores de fincas: altas, cambios de titular e incidencias de luz y gas, con comisión por cada alta.", "url": "https://pablogestionenergia.github.io/gestion-energia/", "logo": "https://pablogestionenergia.github.io/gestion-energia/logo.png", "image": "https://pablogestionenergia.github.io/gestion-energia/og-image.jpg", "telephone": "+34604822007", "email": "pablo.gestionenergia@gmail.com", "areaServed": {"@type": "Country", "name": "España"}, "knowsLanguage": ["es", "ca", "en"], "serviceType": ["Alta de suministro de luz y gas", "Cambio de titular de luz y gas", "Gestión de incidencias de suministro"], "founder": {"@type": "Person", "name": "Pablo Massera", "jobTitle": "Fundador", "sameAs": ["https://www.linkedin.com/in/pablo-massera-742a80319/"]}, "sameAs": ["https://www.linkedin.com/in/pablo-massera-742a80319/"]}</script>
 </head>
 <body>
-
-    <a class="skip-link" href="#contenido">Saltar al contenido</a>
-
-    <header>
-        <div class="wrap header-inner">
-            <a href="#" class="brand" aria-label="Gestión Energía, inicio">
-                <img src="logo.png" alt="Gestión Energía">
-                <span class="brand-tag">Consultoría y gestión de<br>servicios energéticos</span>
-            </a>
-            <nav aria-label="Principal">
-                <a class="nav-link" href="#como-trabajamos">Cómo trabajamos</a>
-                <a class="nav-link" href="#modelos">Modelos</a>
-                <a class="nav-link" href="#contacto">Contacto</a>
-                <a href="https://wa.me/34604822007" class="phone-btn" target="_blank" rel="noopener">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                    604 822 007<span class="sr-only"> (se abre en una pestaña nueva)</span>
-                </a>
-            </nav>
-        </div>
-    </header>
-
-    <main id="contenido" tabindex="-1">
-        <section class="hero">
-            <div class="hero-left on-dark">
-                <h1>Convierte la energía<br>en <span>Rentabilidad Neta</span></h1>
-                <p class="hero-text">Servicio B2B para inmobiliarias y administradores de fincas. Nos ocupamos de la luz y el gas de cada operación —altas, cambios de titular e incidencias— y tu agencia cobra una comisión por cada alta.</p>
-                <div class="hero-ctas">
-                    <a href="#modelos" class="btn btn-oro">Ver modelos de colaboración</a>
-                    <a href="https://wa.me/34604822007?text=Hola%20Pablo%2C%20tengo%20una%20inmobiliaria%20y%20me%20interesa%20colaborar%20con%20Gesti%C3%B3n%20Energ%C3%ADa." class="btn btn-linea" target="_blank" rel="noopener">Hablemos por WhatsApp<span class="sr-only"> (se abre en una pestaña nueva)</span></a>
-                </div>
-            </div>
-            <div class="hero-right" aria-hidden="true"></div>
-        </section>
-
-        <section class="logos">
-            <div class="wrap">
-                <h2 class="logos-title">Operamos directamente con las líderes del mercado</h2>
-                <ul class="logos-grid">
-                    <li><img src="endesa.png" alt="Endesa"></li>
-                    <li><img src="naturgy.png" alt="Naturgy"></li>
-                    <li><img src="iberdrola.png" alt="Iberdrola"></li>
-                    <li><img src="repsol.png" alt="Repsol"></li>
-                    <li><img src="total.png" alt="TotalEnergies"></li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section beneficios">
-            <div class="wrap">
-                <div class="center">
-                    <div class="eyebrow">Tu partner energético</div>
-                    <h2 class="section-title">Tú vendes y alquilas pisos.<br>Nosotros nos ocupamos del resto.</h2>
-                    <p class="section-lead">El cambio de luz y gas es lo último que quiere gestionar un agente, y lo primero de lo que se queja un inquilino si falla.</p>
-                </div>
-                <div class="cards-3">
-                    <div class="card">
-                        <svg class="icon-gold" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        <h3>Comisiones por cada alta</h3>
-                        <p>Un trámite que hoy no te aporta nada se convierte en un ingreso extra para tu agencia, operación tras operación.</p>
-                    </div>
-                    <div class="card">
-                        <svg class="icon-gold" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        <h3>Cero tiempos de espera</h3>
-                        <p>Olvídate de las músicas de espera de las compañías. Gestionamos altas y cambios de titular directamente con la comercializadora.</p>
-                    </div>
-                    <div class="card">
-                        <svg class="icon-gold" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        <h3>Incidencias resueltas</h3>
-                        <p>Si un inquilino se queda sin suministro, nos ocupamos nosotros. Tu reputación queda a salvo.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="como-trabajamos">
-            <div class="wrap">
-                <div class="eyebrow">Cómo trabajamos</div>
-                <h2 class="section-title">Tres pasos, un solo contacto</h2>
-                <p class="section-lead">Sin esperas al teléfono de la compañía ni papeleo para tu equipo. Tú cierras la operación; nosotros dejamos los suministros listos.</p>
-                <ol class="pasos">
-                    <li class="paso">
-                        <h3>Nos pasas el cliente</h3>
-                        <p>Cuando cierras una compraventa o un alquiler, nos envías los datos del comprador o inquilino.</p>
-                    </li>
-                    <li class="paso">
-                        <h3>Tramitamos el suministro</h3>
-                        <p>Alta, cambio de titular o cambio de compañía de luz y gas, con la tarifa que mejor encaja.</p>
-                    </li>
-                    <li class="paso">
-                        <h3>Cobras tu comisión</h3>
-                        <p>Por cada alta gestionada, tu agencia recibe su comisión. Te avisamos cuando todo está hecho.</p>
-                    </li>
-                </ol>
-            </div>
-        </section>
-
-        <section class="section modelos on-dark" id="modelos">
-            <div class="wrap">
-                <div class="center">
-                    <div class="eyebrow">Modelos de colaboración</div>
-                    <h2 class="section-title">Elige cuánto quieres implicarte</h2>
-                    <p class="section-lead">Dos formas de trabajar con nosotros, según el equipo que tenga tu agencia.</p>
-                </div>
-                <div class="modelos-grid">
-                    <div class="modelo">
-                        <div class="modelo-tag">Equilibrio operativo</div>
-                        <h3>Modelo Híbrido</h3>
-                        <p class="modelo-intro">Tú te centras en la captación comercial; nosotros nos ocupamos de la tramitación.</p>
-                        <div class="roles">
-                            <div class="rol"><strong>Tu parte</strong><span>Captar al cliente, la administración básica y la firma.</span></div>
-                            <div class="rol"><strong>Nuestra parte</strong><span>Toda la operación técnica: altas y tramitación con la comercializadora.</span></div>
-                        </div>
-                        <div class="ideal"><strong>Ideal para</strong> inmobiliarias centradas en cerrar operaciones rápido que quieren agilizar procesos.</div>
-                        <a href="https://wa.me/34604822007?text=Hola%20Pablo%2C%20me%20gustar%C3%ADa%20recibir%20las%20condiciones%20del%20Modelo%20H%C3%ADbrido." class="btn btn-verde" target="_blank" rel="noopener">Pedir condiciones<span class="sr-only"> (se abre en una pestaña nueva)</span></a>
-                    </div>
-                    <div class="modelo">
-                        <div class="modelo-tag">Máxima rentabilidad</div>
-                        <h3>Modelo Partner</h3>
-                        <p class="modelo-intro">Tu agencia lleva toda la operativa con nuestra plataforma y nuestro respaldo.</p>
-                        <div class="roles">
-                            <div class="rol"><strong>Tu parte</strong><span>Tramitar las altas desde nuestra plataforma, la administración y la firma de contratos.</span></div>
-                            <div class="rol"><strong>Nuestra parte</strong><span>La plataforma y el soporte técnico continuo.</span></div>
-                        </div>
-                        <div class="ideal"><strong>Ideal para</strong> agencias con equipo administrativo propio que quieren maximizar sus márgenes.</div>
-                        <a href="https://wa.me/34604822007?text=Hola%20Pablo%2C%20me%20gustar%C3%ADa%20recibir%20las%20condiciones%20del%20Modelo%20Partner." class="btn btn-verde" target="_blank" rel="noopener">Pedir condiciones<span class="sr-only"> (se abre en una pestaña nueva)</span></a>
-                    </div>
-                </div>
-                <p class="modelos-nota">Las comisiones de cada modelo te las envío por privado, junto con una propuesta adaptada a tu cartera.</p>
-            </div>
-        </section>
-
-        <section class="section clientes">
-            <div class="wrap center">
-                <div class="eyebrow">Confían en nosotros</div>
-                <h2 class="section-title">Nuestros clientes</h2>
-                <ul class="clients-grid">
-                    <li class="client-card"><img src="putxet.png" alt="Fincas Putxet"></li>
-                    <li class="client-card"><img src="smart.png" alt="Smart Property Management"></li>
-                    <li class="client-card"><img src="fincastema.png" alt="Fincas Tema"></li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section" id="sobre-mi">
-            <div class="wrap sobre">
-                <div class="foto"><img src="pablo.jpg" alt="Pablo Massera, fundador de Gestión Energía"></div>
-                <div>
-                    <div class="eyebrow">Sobre mí</div>
-                    <h2 class="sobre-nombre">Pablo Massera</h2>
-                    <div class="cargo">Fundador · Gestión Energía</div>
-                    <blockquote class="cita"><p>«Mi objetivo es que tú te dediques a vender pisos, mientras yo me ocupo de que tengan luz y gas al mejor precio.»</p></blockquote>
-                    <p class="txt">Vengo del sector de la comercialización energética y conozco por dentro cómo funcionan las altas, los cambios de titular y las incidencias. Con Gestión Energía pongo esa experiencia al servicio de inmobiliarias y administradores de fincas: un único interlocutor que responde.</p>
-                    <a class="linkedin-link" href="https://www.linkedin.com/in/pablo-massera-742a80319/" target="_blank" rel="noopener">
-                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
-                        Sígueme en LinkedIn<span class="sr-only"> (se abre en una pestaña nueva)</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="section contacto on-dark" id="contacto">
-            <div class="wrap">
-                <h2 class="section-title">¿Hablamos de negocios?</h2>
-                <p class="section-lead">Estudio tu cartera de clientes y te presento una propuesta personalizada.</p>
-                <div class="contact-flex">
-                    <a class="contact-item" href="https://wa.me/34604822007" target="_blank" rel="noopener">
-                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                        WhatsApp 604 822 007<span class="sr-only"> (se abre en una pestaña nueva)</span>
-                    </a>
-                    <a class="contact-item" href="tel:+34604822007">
-                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.161 15.161 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1.01A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1c0 9.39 7.61 17 17 17c.55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
-                        Llamar al 604 822 007
-                    </a>
-                    <a class="contact-item" href="mailto:pablo.gestionenergia@gmail.com">
-                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5l-8-5V6l8 5l8-5v2z"/></svg>
-                        <span class="email">pablo.gestionenergia@<wbr>gmail.com</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        © 2026 Gestión Energía · Consultoría y gestión de servicios energéticos
-    </footer>
-
-    <a class="wa-float" href="https://wa.me/34604822007" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp (se abre en una pestaña nueva)">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-    </a>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header>
+<div class="wrap header-inner">
+<a href="" class="brand" aria-label="Gestión Energía, inicio">
+<img src="logo.png" alt="Gestión Energía" width="88" height="89">
+<span class="brand-tag">Consultoría y gestión de<br>servicios energéticos</span>
+</a>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-principal"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg>Menú</button>
+<div class="header-right" id="menu-principal">
+<nav class="nav-main" aria-label="Menú"><a href="inmobiliarias/">Inmobiliarias</a><a href="administradores-de-fincas/">Administradores de fincas</a><a href="modelos-de-colaboracion/">Modelos</a><a href="guias/">Guías</a><a href="sobre-mi/">Sobre mí</a><a href="contacto/">Contacto</a></nav>
+<div class="lang-switch" role="group" aria-label="Idioma"><a href="" lang="es" hreflang="es" aria-current="true" title="Castellano"><span aria-hidden="true">ES</span><span class="sr-only">Castellano</span></a><a href="ca/" lang="ca" hreflang="ca" title="Català"><span aria-hidden="true">CA</span><span class="sr-only">Català</span></a><a href="en/" lang="en" hreflang="en" title="English"><span aria-hidden="true">EN</span><span class="sr-only">English</span></a></div>
+<a href="https://wa.me/34604822007?text=Hola%20Pablo%2C%20me%20interesa%20colaborar%20con%20Gesti%C3%B3n%20Energ%C3%ADa." class="phone-btn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.870 9.870 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.860 9.860 0 01-1.510-5.260c.001-5.450 4.436-9.884 9.888-9.884 2.640 0 5.122 1.030 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.450-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.050 0C5.495 0 .160 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.480-8.413Z"/></svg>604 822 007<span class="sr-only"> (se abre en una pestaña nueva)</span></a>
+</div>
+</div>
+</header>
+<main id="contenido" tabindex="-1">
+<section class="hero">
+<div class="hero-left on-dark">
+<h1>Convierte la energía<br>en <span>Rentabilidad Neta</span></h1>
+<p class="hero-text">Servicio B2B para inmobiliarias y administradores de fincas. Nos ocupamos de la luz y el gas de cada operación —altas, cambios de titular e incidencias— y tu agencia cobra una comisión por cada alta.</p>
+<div class="hero-ctas">
+<a href="modelos-de-colaboracion/" class="btn btn-oro">Ver modelos de colaboración</a>
+<a href="https://wa.me/34604822007?text=Hola%20Pablo%2C%20tengo%20una%20inmobiliaria%20y%20me%20interesa%20colaborar%20con%20Gesti%C3%B3n%20Energ%C3%ADa." class="btn btn-linea" target="_blank" rel="noopener">Hablemos por WhatsApp<span class="sr-only"> (se abre en una pestaña nueva)</span></a>
+</div></div>
+<div class="hero-right" aria-hidden="true"></div>
+</section>
+<section class="logos"><div class="wrap">
+<h2 class="logos-title">Operamos con las principales comercializadoras del mercado</h2>
+<ul class="logos-grid"><li><img src="endesa.png" alt="Endesa" width="120" height="46"></li><li><img src="naturgy.png" alt="Naturgy" width="120" height="46"></li><li><img src="iberdrola.png" alt="Iberdrola" width="120" height="46"></li><li><img src="repsol.png" alt="Repsol" width="120" height="46"></li><li><img src="total.png" alt="TotalEnergies" width="120" height="46"></li></ul>
+<p class="logos-more">…y muchas más</p>
+</div></section>
+<section class="section beneficios"><div class="wrap">
+<div class="center"><div class="eyebrow">Tu partner energético</div>
+<h2 class="section-title">Tú vendes y alquilas pisos.<br>Nosotros nos ocupamos del resto.</h2>
+<p class="section-lead">El cambio de luz y gas es lo último que quiere gestionar un agente, y lo primero de lo que se queja un inquilino si falla.</p></div>
+<div class="cards-3">
+<div class="card"><svg class="icon-gold" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Comisiones por cada alta</h3><p>Un trámite que hoy no te aporta nada se convierte en un ingreso extra para tu agencia, operación tras operación.</p></div>
+<div class="card"><svg class="icon-gold" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Cero tiempos de espera</h3><p>Olvídate de las músicas de espera de las compañías. Gestionamos altas y cambios de titular directamente con la comercializadora.</p></div>
+<div class="card"><svg class="icon-gold" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Incidencias resueltas</h3><p>Si un inquilino se queda sin suministro, nos ocupamos nosotros. Tu reputación queda a salvo.</p></div>
+</div></div></section>
+<section class="section"><div class="wrap">
+<div class="eyebrow">Cómo trabajamos</div>
+<h2 class="section-title">Tres pasos, un solo contacto</h2>
+<p class="section-lead">Sin esperas al teléfono de la compañía ni papeleo para tu equipo. Tú cierras la operación; nosotros dejamos los suministros listos.</p>
+<ol class="pasos">
+<li class="paso"><h3>Nos pasas el cliente</h3><p>Cuando cierras una compraventa o un alquiler, nos envías los datos del comprador o inquilino.</p></li>
+<li class="paso"><h3>Tramitamos el suministro</h3><p>Alta, cambio de titular o cambio de compañía de luz y gas, con la tarifa que mejor encaja.</p></li>
+<li class="paso"><h3>Cobras tu comisión</h3><p>Por cada alta gestionada, tu agencia recibe su comisión. Te avisamos cuando todo está hecho.</p></li>
+</ol>
+</div></section>
+<section class="section beneficios"><div class="wrap">
+<div class="center"><div class="eyebrow">Para quién trabajamos</div>
+<h2 class="section-title">Un servicio pensado para el sector inmobiliario</h2></div>
+<div class="cards-2">
+<a class="card" href="inmobiliarias/"><svg class="icon-gold" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V21H3z" stroke-linejoin="round"/><path d="M9 21v-6h6v6" stroke-linejoin="round"/></svg><h3>Inmobiliarias</h3><p>Compraventas y alquileres de larga duración: el comprador o inquilino entra a vivir con la luz y el gas a su nombre, y tu agencia cobra por cada alta.</p><span class="mas">Ver servicio para inmobiliarias →</span></a>
+<a class="card" href="administradores-de-fincas/"><svg class="icon-gold" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 6h1M14 6h1M9 10h1M14 10h1M9 14h1M14 14h1M10 22v-4h4v4" stroke-linecap="round"/></svg><h3>Administradores de fincas</h3><p>Cada cambio de propietario o de inquilino en las fincas que gestionas, resuelto sin que tu despacho tenga que llamar a ninguna compañía.</p><span class="mas">Ver servicio para administradores →</span></a>
+</div></div></section>
+<section class="section modelos on-dark"><div class="wrap center">
+<div class="eyebrow">Modelos de colaboración</div>
+<h2 class="section-title">Elige cuánto quieres implicarte</h2>
+<p class="section-lead">Modelo Híbrido: tú captas y nosotros tramitamos. Modelo Partner: tu equipo tramita con nuestra plataforma y nuestro respaldo.</p>
+<p style="margin-top:30px"><a class="btn btn-oro" href="modelos-de-colaboracion/">Comparar los dos modelos</a></p>
+</div></section>
+<section class="section clientes"><div class="wrap center">
+<div class="eyebrow">Confían en nosotros</div>
+<h2 class="section-title">Nuestros clientes</h2>
+<ul class="clients-grid">
+<li class="client-card"><img src="putxet.png" alt="Fincas Putxet" loading="lazy"></li>
+<li class="client-card"><img src="smart.png" alt="Smart Property Management" loading="lazy"></li>
+<li class="client-card"><img src="fincastema.png" alt="Fincas Tema" loading="lazy"></li>
+</ul></div></section>
+<section class="section"><div class="wrap">
+<div class="eyebrow">Guías prácticas</div>
+<h2 class="section-title">Resuelve las dudas de suministro de tus operaciones</h2>
+<p class="section-lead">Lo que más nos preguntan los agentes y administradores, explicado paso a paso.</p>
+<div class="guias-grid"><a class="guia-card" href="guias/cambio-de-titular-luz-venta-alquiler/"><span class="tag">Cambio de titular</span><h3>Cambio de titular de la luz al vender o alquilar un piso</h3><p>Pasos, documentos y cómo evitar que el nuevo cliente herede deudas del titular anterior.</p></a><a class="guia-card" href="guias/alta-luz-piso-sin-suministro/"><span class="tag">Alta de suministro</span><h3>Alta de luz en un piso sin suministro: cuándo hace falta boletín</h3><p>Cuándo se pide el boletín eléctrico (CIE), qué se paga y cómo no retrasar la entrega de llaves.</p></a><a class="guia-card" href="guias/que-es-el-cups/"><span class="tag">Conceptos básicos</span><h3>Qué es el CUPS y dónde encontrarlo</h3><p>El código que identifica cada suministro y por qué lo vas a necesitar en cada operación.</p></a></div>
+<p style="margin-top:30px"><a class="btn btn-verde" href="guias/">Ver todas las guías</a></p>
+</div></section>
+<section class="section contacto on-dark"><div class="wrap">
+<h2 class="section-title">¿Hablamos de negocios?</h2>
+<p class="section-lead">Estudio tu cartera de clientes y te presento una propuesta personalizada.</p>
+<div class="contact-flex">
+<a class="contact-item" href="contacto/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5l-8-5V6l8 5l8-5v2z"/></svg> Escríbeme desde el formulario</a>
+<a class="contact-item" href="https://wa.me/34604822007?text=Hola%20Pablo%2C%20me%20interesa%20colaborar%20con%20Gesti%C3%B3n%20Energ%C3%ADa." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.870 9.870 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.860 9.860 0 01-1.510-5.260c.001-5.450 4.436-9.884 9.888-9.884 2.640 0 5.122 1.030 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.450-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.050 0C5.495 0 .160 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.480-8.413Z"/></svg> WhatsApp 604 822 007<span class="sr-only"> (se abre en una pestaña nueva)</span></a>
+<a class="contact-item" href="tel:+34604822007"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.161 15.161 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1.01A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1c0 9.39 7.61 17 17 17c.55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg> Llamar al 604 822 007</a>
+</div></div></section>
+</main>
+<footer>
+<div class="wrap footer-inner">
+<span>© 2026 Gestión Energía · Consultoría y gestión de servicios energéticos</span>
+<span class="footer-links">
+<a href="https://www.linkedin.com/in/pablo-massera-742a80319/" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (se abre en una pestaña nueva)</span></a>
+<a href="mailto:pablo.gestionenergia@gmail.com">Email</a>
+<a href="aviso-legal/">Aviso legal</a>
+<a href="privacidad/">Privacidad</a>
+</span>
+</div>
+</footer>
+<a class="wa-float" href="https://wa.me/34604822007?text=Hola%20Pablo%2C%20me%20interesa%20colaborar%20con%20Gesti%C3%B3n%20Energ%C3%ADa." target="_blank" rel="noopener" aria-label="WhatsApp (se abre en una pestaña nueva)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.870 9.870 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.860 9.860 0 01-1.510-5.260c.001-5.450 4.436-9.884 9.888-9.884 2.640 0 5.122 1.030 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.450-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.050 0C5.495 0 .160 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.480-8.413Z"/></svg></a>
+<script>
+(function(){var h=document.querySelector('header'),b=h.querySelector('.menu-btn');
+b.addEventListener('click',function(){var o=h.classList.toggle('open');b.setAttribute('aria-expanded',o);});
+h.querySelectorAll('.header-right a').forEach(function(a){a.addEventListener('click',function(){h.classList.remove('open');b.setAttribute('aria-expanded','false');});});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&h.classList.contains('open')){h.classList.remove('open');b.setAttribute('aria-expanded','false');b.focus();}});})();
+</script>
 
 </body>
 </html>
