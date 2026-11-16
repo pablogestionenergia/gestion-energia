@@ -8,7 +8,7 @@ PHONE_TXT = "604 822 007"
 EMAIL = "pablo.gestionenergia@gmail.com"
 LINKEDIN = "https://www.linkedin.com/in/pablo-massera-742a80319/"
 # Clave de Web3Forms (se pide gratis en https://web3forms.com con el email de arriba)
-WEB3FORMS_KEY = "PEGA_AQUI_TU_CLAVE_WEB3FORMS"
+WEB3FORMS_KEY = "0ca97bbb-d14f-40f3-90f5-8e3803a09660"
 TODAY = "2026-11-13"
 
 PAGES = []
