@@ -23,7 +23,7 @@ def guias_destacadas(n=3):
 
 # ================= INICIO =================
 page(lang=L, group="home", path="",
- title="Gestión Energía | Luz y gas para inmobiliarias y administradores de fincas",
+ title="Gestión Energía | Altas de luz y gas para inmobiliarias",
  desc="Gestionamos las altas y cambios de titular de luz y gas de tus operaciones inmobiliarias y tu agencia cobra una comisión por cada alta. Servicio B2B en toda España.",
  body=f'''<section class="hero">
 <div class="hero-left on-dark">

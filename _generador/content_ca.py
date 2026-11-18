@@ -13,7 +13,7 @@ def pasos():
 </ol>'''
 
 page(lang=L, group="home", path="ca/",
- title="Gestión Energía | Llum i gas per a immobiliàries i administradors de finques",
+ title="Gestión Energía | Altes de llum i gas per a immobiliàries",
  desc="Gestionem les altes i els canvis de titular de llum i gas de les teves operacions immobiliàries i la teva agència cobra una comissió per cada alta. Servei B2B a tot l'Estat.",
  body=f'''<section class="hero"><div class="hero-left on-dark">
 <h1>Converteix l'energia<br>en <span>Rendibilitat Neta</span></h1>

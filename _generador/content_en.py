@@ -13,7 +13,7 @@ def steps():
 </ol>'''
 
 page(lang=L, group="home", path="en/",
- title="Gestión Energía | Electricity and gas set-up for estate agencies in Spain",
+ title="Gestión Energía | Electricity and gas for estate agencies",
  desc="We handle electricity and gas connections and changes of account holder for your property deals in Spain, and your agency earns a commission on every new contract.",
  body=f'''<section class="hero"><div class="hero-left on-dark">
 <h1>Turn utilities<br>into <span>extra revenue</span></h1>
@@ -54,7 +54,7 @@ FAQ_AG = [
  ("Do you work outside Barcelona?", "Yes. We work fully online with agencies all over Spain."),
 ]
 page(lang=L, group="agencias", path="en/estate-agencies/", faq=FAQ_AG,
- title="Electricity and gas set-up for estate agencies | Gestión Energía",
+ title="Utility set-up for estate agencies | Gestión Energía",
  desc="New connections and changes of account holder for electricity and gas in every sale or rental in Spain. Your agency saves time and earns a commission on every contract.",
  body=page_hero(L, "Utilities ready in every deal, <span>plus a commission for your agency</span>",
    "When you close a sale or a rental, we put the utilities in the new client's name. Your team makes no calls and fills in no forms.",
@@ -75,7 +75,7 @@ page(lang=L, group="agencias", path="en/estate-agencies/", faq=FAQ_AG,
 {cta_block(L, WA_AG)}''')
 
 page(lang=L, group="admin", path="en/property-managers/",
- title="Electricity and gas for property managers in Spain | Gestión Energía",
+ title="Electricity and gas for property managers | Gestión Energía",
  desc="Changes of account holder and new electricity and gas connections in the buildings you manage in Spain, with no workload for your office and a commission on every contract.",
  body=page_hero(L, "Utilities in your buildings, <span>sorted without phone calls</span>",
    "When a new owner or tenant moves into a property you manage, we take care of the electricity and gas. Your office earns a commission on every new contract.",
@@ -136,7 +136,7 @@ contact_page(L, "contacto", "en/contact/",
 
 # ---- Guía expats (EN) ----
 page(lang=L, group="guia-expats", path="en/guides/utilities-for-expat-tenants/", nav="guias",
- title="Electricity and gas for expat tenants in Spain: what they need | Gestión Energía",
+ title="Electricity and gas for expat tenants in Spain",
  desc="What an international tenant needs to put electricity and gas in their name in Spain, and how the letting agency can help: NIE or passport, bank account and language.",
  article=dict(headline="Electricity and gas for expat tenants in Spain", date=TODAY),
  body=page_hero(L, "Electricity and gas for expat tenants in Spain", "NIE or passport, bank account and language: how to get utilities in an international tenant's name.",

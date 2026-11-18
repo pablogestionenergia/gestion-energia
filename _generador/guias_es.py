@@ -10,7 +10,7 @@ def cta(txt="¿Tienes una operación entre manos? Pásanos los datos del cliente
 GUIAS = [
 dict(group="guia-titular", slug="cambio-de-titular-luz-venta-alquiler", tag="Cambio de titular",
  h1="Cambio de titular de la luz al vender o alquilar un piso",
- title="Cambio de titular de la luz al vender o alquilar un piso: pasos y documentos",
+ title="Cambio de titular de la luz al vender o alquilar un piso",
  desc="Qué es el cambio de titular de la luz, qué documentos se necesitan, cuánto cuesta y cómo evitar heredar deudas en una compraventa o un alquiler.",
  resumen="Pasos, documentos y cómo evitar que el nuevo cliente herede deudas del titular anterior.",
  body=f'''<p class="meta">Guía para inmobiliarias y administradores de fincas · Actualizada en noviembre de 2026</p>
@@ -35,12 +35,12 @@ dict(group="guia-titular", slug="cambio-de-titular-luz-venta-alquiler", tag="Cam
 <p>Si el titular anterior dejó facturas sin pagar, lo recomendable es pedir el cambio <strong>sin subrogación</strong>: el contrato nuevo empieza desde cero a nombre del nuevo titular, sin asumir las deudas del anterior. Con subrogación, en cambio, el nuevo titular continúa el contrato existente con sus condiciones.</p>
 <div class="nota"><strong>Consejo para la agencia:</strong> deja anotadas las lecturas de los contadores el día de la entrega de llaves (una foto basta). Evita discusiones sobre quién pagó qué consumo.</div>
 <h2>¿Y el gas?</h2>
-<p>El gas tiene su propio contrato y su propio CUPS, así que hay que hacer un cambio de titular aparte. Lo práctico es tramitar luz y gas a la vez.</p>
+<p>El gas tiene su propio contrato y su propio CUPS, así que hay que hacer un cambio de titular aparte. Lo práctico es tramitar luz y gas a la vez. Lo explicamos en la guía de <a href="@@guia-gas@@">cambio de titular del gas</a>.</p>
 {cta()}'''),
 
 dict(group="guia-alta", slug="alta-luz-piso-sin-suministro", tag="Alta de suministro",
  h1="Alta de luz en un piso sin suministro: cuándo hace falta boletín",
- title="Alta de luz en un piso sin suministro: boletín (CIE), costes y pasos",
+ title="Alta de luz en un piso sin suministro: boletín y costes",
  desc="Cómo dar de alta la luz en un piso con el suministro dado de baja: cuándo se pide el boletín eléctrico (CIE), qué derechos se pagan y cómo evitar retrasos en la entrega de llaves.",
  resumen="Cuándo se pide el boletín eléctrico (CIE), qué se paga y cómo no retrasar la entrega de llaves.",
  body=f'''<p class="meta">Guía para inmobiliarias y administradores de fincas · Actualizada en noviembre de 2026</p>
@@ -57,7 +57,7 @@ dict(group="guia-alta", slug="alta-luz-piso-sin-suministro", tag="Alta de sumini
 <p>Cada distribuidora puede revisar el caso concreto, así que lo mejor es confirmarlo antes de comprometer una fecha de entrega.</p>
 <div class="nota"><strong>Consejo para la agencia:</strong> si el piso está vacío y sin luz, pregunta al propietario si conserva el boletín antes de publicar el anuncio. Encargar uno nuevo lleva días.</div>
 <h2>Paso 3: solicita el alta con los datos del nuevo titular</h2>
-<p>Hacen falta los mismos datos que para un cambio de titular (DNI o NIE, <a href="@@guia-cups@@">CUPS</a>, IBAN y contacto) más la potencia que se quiere contratar. Si no se sabe qué potencia elegir, mira la potencia que tenía el contrato anterior o pregúntanos.</p>
+<p>Hacen falta los mismos datos que para un cambio de titular (DNI o NIE, <a href="@@guia-cups@@">CUPS</a>, IBAN y contacto) más la potencia que se quiere contratar. Si no se sabe qué potencia elegir, mira la potencia que tenía el contrato anterior, consulta la guía <a href="@@guia-potencia@@">qué potencia de luz contratar en un piso</a> o pregúntanos.</p>
 <h2>¿Cuánto tarda?</h2>
 <p>Depende de la distribuidora y de si hace falta boletín o visita técnica. Por eso conviene empezar el trámite en cuanto se firma la operación, no el día de la mudanza.</p>
 {cta()}'''),
@@ -84,7 +84,7 @@ dict(group="guia-cups", slug="que-es-el-cups", tag="Conceptos básicos",
 
 dict(group="guia-datos", slug="datos-para-tramitar-luz-y-gas", tag="Checklist",
  h1="Checklist: datos del cliente para tramitar la luz y el gas",
- title="Checklist de datos para tramitar la luz y el gas en una compraventa o alquiler",
+ title="Checklist de datos para tramitar la luz y el gas",
  desc="La lista de datos y documentos que hay que pedir al comprador o inquilino para tramitar el cambio de titular o el alta de luz y gas sin idas y vueltas.",
  resumen="La lista de lo que hay que pedir al comprador o inquilino, para hacerlo todo de una vez.",
  body=f'''<p class="meta">Para imprimir o copiar en tu CRM · Actualizada en noviembre de 2026</p>
@@ -116,7 +116,7 @@ dict(group="guia-datos", slug="datos-para-tramitar-luz-y-gas", tag="Checklist",
 
 dict(group="guia-expats", slug="suministros-inquilinos-extranjeros", tag="Expats",
  h1="Luz y gas para inquilinos extranjeros: lo que necesitan",
- title="Luz y gas para inquilinos extranjeros (expats) en España: documentos y consejos",
+ title="Luz y gas para inquilinos extranjeros en España",
  desc="Qué necesita un inquilino extranjero para poner la luz y el gas a su nombre en España y cómo puede ayudarle la agencia: NIE o pasaporte, cuenta bancaria e idioma.",
  resumen="NIE o pasaporte, cuenta bancaria e idioma: cómo ayudar a un expat a tener los suministros a su nombre.",
  body=f'''<p class="meta">Guía para agencias que trabajan con expats · Actualizada en noviembre de 2026 · <a href="@@en:guia-expats@@" hreflang="en">Read in English</a></p>
@@ -140,7 +140,7 @@ dict(group="guia-expats", slug="suministros-inquilinos-extranjeros", tag="Expats
 
 dict(group="guia-errores", slug="errores-suministros-entrega-de-llaves", tag="Buenas prácticas",
  h1="7 errores con la luz y el gas en la entrega de llaves",
- title="7 errores con la luz y el gas en la entrega de llaves (y cómo evitarlos)",
+ title="7 errores con la luz y el gas en la entrega de llaves",
  desc="Los fallos más habituales con los suministros en compraventas y alquileres, y cómo evitarlos desde la agencia para que el cliente entre a vivir con todo funcionando.",
  resumen="Los fallos que más quejas generan después de firmar, y cómo evitarlos desde la agencia.",
  body=f'''<p class="meta">Guía para inmobiliarias · Actualizada en noviembre de 2026</p>
@@ -152,7 +152,7 @@ dict(group="guia-errores", slug="errores-suministros-entrega-de-llaves", tag="Bu
 <h2>3. No anotar las lecturas de los contadores</h2>
 <p>Sin una foto de la lectura del día de la entrega, cualquier discusión sobre consumos es difícil de resolver.</p>
 <h2>4. Olvidarse del gas</h2>
-<p>La luz y el gas son contratos distintos, con <a href="@@guia-cups@@">CUPS distintos</a>. Hay que tramitar los dos.</p>
+<p>La luz y el gas son contratos distintos, con <a href="@@guia-cups@@">CUPS distintos</a>. Hay que tramitar los dos (ver la guía de <a href="@@guia-gas@@">cambio de titular del gas</a>).</p>
 <h2>5. Heredar deudas del titular anterior</h2>
 <p>Si había facturas pendientes, pide el cambio sin subrogación para que el contrato nuevo empiece desde cero.</p>
 <h2>6. No comprobar el boletín en pisos vacíos</h2>
@@ -160,18 +160,87 @@ dict(group="guia-errores", slug="errores-suministros-entrega-de-llaves", tag="Bu
 <h2>7. Dejarlo en manos del cliente sin ayuda</h2>
 <p>El cliente no conoce el proceso, y cuando algo falla, llama a la agencia. Delegarlo en un especialista ahorra llamadas y, además, puede generar un ingreso.</p>
 {cta()}'''),
+
+dict(group="guia-gas", slug="cambio-de-titular-gas-venta-alquiler", tag="Gas",
+ h1="Cambio de titular del gas al vender o alquilar un piso",
+ title="Cambio de titular del gas al vender o alquilar un piso",
+ desc="Cómo poner el gas a nombre del comprador o inquilino: datos necesarios, inspección obligatoria cada 5 años y qué hacer si el gas está de baja.",
+ resumen="Datos, inspección obligatoria y qué hacer si el gas está de baja, para no dejar el gas para el final.",
+ body=f'''<p class="meta">Guía para inmobiliarias y administradores de fincas · Actualizada en noviembre de 2026</p>
+<p>En casi todas las operaciones se piensa primero en la luz y el gas se queda para después. Pero el gas natural tiene su propio contrato, su propio <a href="@@guia-cups@@">CUPS</a> y sus propias reglas, y es el suministro que más sorpresas da: inspecciones caducadas, certificados que faltan o un piso que lleva tiempo con el gas cortado.</p>
+<h2>Si el gas está activo: cambio de titular</h2>
+<p>Cuando la vivienda tiene gas y el contrato sigue en vigor, basta con un <strong>cambio de titular</strong>: el suministro no se corta y el contrato pasa al comprador o al inquilino. Normalmente no tiene coste. Es el mismo trámite que en la luz (lo explicamos en la guía de <a href="@@guia-titular@@">cambio de titular de la luz</a>), pero hay que pedirlo aparte.</p>
+<h2>Qué datos se necesitan</h2>
+<ul>
+<li>Nombre completo y DNI, NIE o pasaporte del nuevo titular.</li>
+<li>El CUPS del gas, que es distinto del de la luz y aparece en cualquier factura de gas.</li>
+<li>IBAN para domiciliar los recibos.</li>
+<li>Teléfono y email del nuevo titular.</li>
+<li>La lectura del contador de gas el día de la entrega (una foto basta).</li>
+<li>En algunos casos, el contrato de alquiler o la escritura, como prueba de que la persona ocupa la vivienda.</li>
+</ul>
+<p>Lo tienes todo junto, para pedírselo al cliente de una vez, en la <a href="@@guia-datos@@">checklist de datos para tramitar luz y gas</a>.</p>
+<h2>Cómo evitar heredar deudas</h2>
+<p>Igual que con la luz, si el titular anterior dejó recibos pendientes conviene pedir el cambio <strong>sin subrogación</strong>, para que el contrato nuevo empiece desde cero. Si la comercializadora pone pegas, tener el contrato de alquiler o la escritura a mano ayuda a demostrar que el nuevo titular no tiene nada que ver con esa deuda.</p>
+<h2>La inspección obligatoria cada 5 años</h2>
+<p>Las instalaciones de gas natural de las viviendas tienen que pasar una <strong>inspección periódica obligatoria cada 5 años</strong>. La organiza la distribuidora de la zona (Nedgia, Nortegas, Redexis, Madrileña Red de Gas, etc.), avisa con antelación y el importe se cobra en la factura de gas, no en mano al técnico. Si la instalación no pasa la inspección, hay que corregir los defectos en el plazo que se indique o la distribuidora puede cortar el suministro.</p>
+<p>No hay que confundirla con las "revisiones" o servicios de mantenimiento que venden algunas comercializadoras: esos son opcionales y de precio libre.</p>
+<div class="nota"><strong>Consejo para la agencia:</strong> al captar el inmueble, pregunta al propietario cuándo fue la última inspección del gas y si quedó algún defecto pendiente. Es mucho más fácil resolverlo antes de la firma que con el inquilino ya dentro.</div>
+<h2>Si el gas está de baja: alta del suministro</h2>
+<p>Si el piso lleva tiempo vacío y el gas se dio de baja, no vale un cambio de titular: hay que pedir un <strong>alta</strong>. En general, cuando la instalación lleva más de un año sin suministro, la distribuidora la trata como una instalación nueva y pide un <strong>certificado de la instalación de gas</strong> firmado por un instalador habilitado, además de los derechos de alta regulados. Si la instalación necesita reformas para cumplir la normativa, el presupuesto lo hace el instalador y no tiene precio regulado.</p>
+<p>Por eso, en un piso vacío conviene comprobar el estado del gas en cuanto se capta, no la semana de la entrega de llaves.</p>
+<h2>¿Mercado libre o tarifa regulada?</h2>
+<p>En el gas, los hogares pueden elegir entre una oferta del mercado libre y la <strong>TUR</strong> (tarifa de último recurso), una tarifa regulada que ofrecen las comercializadoras de referencia. El cambio de titular es un buen momento para revisar qué le conviene al nuevo titular según el uso que vaya a hacer del gas (solo agua caliente y cocina, o también calefacción).</p>
+{cta()}'''),
+
+dict(group="guia-potencia", slug="que-potencia-contratar-piso", tag="Potencia",
+ h1="Qué potencia de luz contratar en un piso",
+ title="Qué potencia de luz contratar en un piso y cuánto cuesta",
+ desc="Cómo elegir la potencia de luz al cambiar el titular de un piso: punta y valle, cuánto cuesta subirla o bajarla y el límite de un cambio cada 12 meses.",
+ resumen="Potencia punta y valle, cuánto cuesta subirla o bajarla y por qué conviene decidirlo en el cambio de titular.",
+ body=f'''<p class="meta">Guía para inmobiliarias y administradores de fincas · Actualizada en noviembre de 2026</p>
+<p>La potencia contratada es la cantidad de electricidad que la vivienda puede usar a la vez. Si se queda corta, salta la luz al poner el horno y la lavadora juntos; si sobra, el cliente paga cada mes por una potencia que no usa. Y como no se puede cambiar cuando se quiera, el mejor momento para revisarla es el <a href="@@guia-titular@@">cambio de titular</a> o el <a href="@@guia-alta@@">alta</a>.</p>
+<h2>Dos potencias: punta y valle</h2>
+<p>En los contratos domésticos (peaje 2.0TD, hasta 15 kW) se contratan dos potencias, que pueden ser iguales o distintas:</p>
+<ul>
+<li><strong>Punta-llano (P1):</strong> de lunes a viernes, de 8:00 a 24:00.</li>
+<li><strong>Valle (P2):</strong> de lunes a viernes, de 0:00 a 8:00, y los fines de semana y festivos todo el día.</li>
+</ul>
+<p>Con contador inteligente se puede contratar la potencia en tramos de 0,1 kW, así que se puede ajustar bastante al uso real.</p>
+<h2>Cómo saber cuánta potencia necesita el cliente</h2>
+<ul>
+<li><strong>Mira la potencia del contrato anterior</strong> y pregunta si saltaba la luz con frecuencia.</li>
+<li><strong>Consulta la potencia máxima demandada:</strong> el contador inteligente la registra y se puede ver en el área de clientes de la distribuidora o en las facturas.</li>
+<li><strong>Piensa en los aparatos que se usan a la vez:</strong> placa de inducción, horno, lavadora, secadora, aire acondicionado, aerotermia o un cargador de coche eléctrico son los que más potencia piden.</li>
+</ul>
+<p>Como orientación, una persona sola con electrodomésticos básicos suele tener suficiente con unos 3 kW, mientras que una familia que usa varios aparatos potentes a la vez puede necesitar 4,6 kW o más. Lo mejor es decidirlo con los datos de la vivienda y los hábitos del cliente.</p>
+<div class="nota"><strong>Consejo para la agencia:</strong> cuando pidas los datos del cliente, pregúntale también si va a teletrabajar, si cocina con inducción o si tiene coche eléctrico. Con eso se puede ajustar la potencia en el mismo trámite.</div>
+<h2>¿Cuánto cuesta cambiar la potencia?</h2>
+<p>Los importes los cobra la distribuidora a través de la factura de la comercializadora y están regulados (a todos se les suma el IVA):</p>
+<ul>
+<li><strong>Bajar la potencia:</strong> solo se paga el derecho de enganche, unos 9 € por solicitud.</li>
+<li><strong>Subir la potencia:</strong> derechos de acceso (unos 19,70 € por cada kW que se añade), derechos de extensión (unos 17,37 € por kW, solo por la parte que supere la potencia que ya tenía reconocida la instalación) y el enganche. Si la instalación es antigua, la distribuidora puede cobrar también unos 8 € de verificación.</li>
+</ul>
+<p>Por ejemplo, subir de 3,45 a 4,6 kW cuesta unos 52 € más IVA cuando se pagan los tres conceptos.</p>
+<h2>El límite: un cambio cada 12 meses</h2>
+<p>Según el reglamento de suministro eléctrico vigente (Real Decreto 88/2026), la distribuidora atiende los cambios de potencia cuando han pasado al menos 12 meses desde la última modificación, y puede rechazar uno voluntario hecho antes. Por eso conviene acertar a la primera y, si el titular anterior cambió la potencia hace poco, tenerlo en cuenta.</p>
+<h2>Cuándo hace falta boletín</h2>
+<p>El boletín eléctrico (CIE) indica la potencia máxima que admite la instalación. Si se quiere contratar más, hace falta un boletín nuevo emitido por un instalador autorizado. En contratos con más de 20 años, la distribuidora puede pedir además una verificación de la instalación antes de subir la potencia. Si solo se cambia el titular, sin tocar la potencia, no puede exigir un boletín nuevo por la antigüedad del contrato.</p>
+<h2>¿Cuánto tarda?</h2>
+<p>Con contador inteligente, el cambio suele hacerse a distancia y debe quedar hecho en un plazo de 72 horas; si hace falta trabajo en la instalación, el plazo es de hasta cinco días hábiles.</p>
+{cta()}'''),
 ]
 
 for g in GUIAS:
     page(lang=L, group=g["group"], path=f'guias/{g["slug"]}/', nav="guias",
-         title=g["title"] + " | Gestión Energía", desc=g["desc"],
+         title=g["title"] + " | Gestión Energía" if len(g["title"]) <= 42 else g["title"], desc=g["desc"],
          article=dict(headline=g["h1"], date=D),
          body=page_hero(L, g["h1"], g["resumen"], crumbs=[("Guías", "@@guias@@"), (g["tag"], None)])
               + f'<section class="section"><div class="wrap"><article class="prose">{g["body"]}</article></div></section>')
 
 cards = "".join(f'<a class="guia-card" href="@@{g["group"]}@@"><span class="tag">{g["tag"]}</span><h3>{g["h1"]}</h3><p>{g["resumen"]}</p></a>' for g in GUIAS)
 page(lang=L, group="guias", path="guias/",
- title="Guías de luz y gas para inmobiliarias y administradores | Gestión Energía",
+ title="Guías de luz y gas para inmobiliarias | Gestión Energía",
  desc="Guías prácticas sobre cambio de titular, altas de luz, boletín eléctrico, CUPS y suministros para expats, pensadas para inmobiliarias y administradores de fincas.",
  body=page_hero(L, "Guías de luz y gas <span>para el sector inmobiliario</span>",
    "Respuestas claras a las dudas de suministro que aparecen en cada compraventa y cada alquiler.", crumbs=[("Guías", None)])
