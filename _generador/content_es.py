@@ -264,9 +264,9 @@ page(lang=L, group="aviso", path="aviso-legal/", noindex=True,
 <h2>Titular del sitio web</h2>
 <p>En cumplimiento del artículo 10 de la Ley 34/2002, de servicios de la sociedad de la información y de comercio electrónico (LSSI-CE), se informa de los datos del titular de este sitio web:</p>
 <ul>
-<li><strong>Titular:</strong> {P("NOMBRE Y APELLIDOS COMPLETOS")}, que opera con el nombre comercial Gestión Energía</li>
-<li><strong>NIF:</strong> {P("NIF")}</li>
-<li><strong>Domicilio:</strong> {P("DOMICILIO FISCAL")}</li>
+<li><strong>Titular:</strong> Pablo Massera, que opera con el nombre comercial Gestión Energía</li>
+<li><strong>NIF:</strong> Y0525604E</li>
+<li><strong>Domicilio:</strong> calle França Xica, 17, 08004 Barcelona</li>
 <li><strong>Email:</strong> <a href="mailto:{EMAIL}">{EMAIL}</a></li>
 <li><strong>Teléfono:</strong> +34 {PHONE_TXT}</li>
 </ul>
@@ -287,7 +287,7 @@ page(lang=L, group="privacidad", path="privacidad/", noindex=True,
  body=page_hero(L, "Política de privacidad", "Cómo tratamos los datos que nos envías a través de esta web.", crumbs=[("Privacidad", None)])
  + f'''<section class="section"><div class="wrap"><div class="prose">
 <h2>Responsable del tratamiento</h2>
-<p>{P("NOMBRE Y APELLIDOS COMPLETOS")} (Gestión Energía), NIF {P("NIF")}, con domicilio en {P("DOMICILIO FISCAL")}. Contacto: <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
+<p>Pablo Massera (Gestión Energía), NIF Y0525604E, con domicilio en calle França Xica, 17, 08004 Barcelona. Contacto: <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
 <h2>Qué datos tratamos y para qué</h2>
 <p>Los datos que nos facilitas en el formulario de contacto (nombre, empresa, email, teléfono, tipo de negocio, cómo nos has conocido y mensaje), o al escribirnos por email o WhatsApp, se usan únicamente para responder a tu consulta y, si te interesa, enviarte una propuesta de colaboración.</p>
 <h2>Base legal</h2>

@@ -229,6 +229,72 @@ dict(group="guia-potencia", slug="que-potencia-contratar-piso", tag="Potencia",
 <h2>¿Cuánto tarda?</h2>
 <p>Con contador inteligente, el cambio suele hacerse a distancia y debe quedar hecho en un plazo de 72 horas; si hace falta trabajo en la instalación, el plazo es de hasta cinco días hábiles.</p>
 {cta()}'''),
+dict(group="guia-alquiler", slug="luz-gas-alquiler-propietario-o-inquilino", tag="Alquiler",
+ h1="Luz y gas en un piso de alquiler: ¿a nombre del propietario o del inquilino?",
+ title="Luz y gas en alquiler: ¿propietario o inquilino?",
+ desc="A nombre de quién deben ir los contratos de luz y gas en un piso de alquiler, qué dice la normativa, qué pasa con las deudas y qué hacer cuando el inquilino se va.",
+ resumen="Qué dice la normativa, quién responde de las deudas y cómo dejarlo claro en el contrato de alquiler.",
+ body=f'''<p class="meta">Guía para inmobiliarias y administradores de fincas · Actualizada en noviembre de 2026</p>
+<p>Es una de las preguntas que más se repiten al firmar un alquiler: ¿la luz y el gas se quedan a nombre del propietario o se pasan al inquilino? La respuesta corta es que lo recomendable es que el contrato esté a nombre de quien vive en la vivienda. Te explicamos por qué y cómo organizarlo desde la agencia.</p>
+<h2>Qué dice la normativa</h2>
+<ul>
+<li><strong>Ley de Arrendamientos Urbanos (art. 20.4):</strong> los gastos por servicios que se individualizan mediante contadores, como la luz y el gas de la vivienda, son en todo caso a cargo del inquilino.</li>
+<li><strong>Reglamento de suministro eléctrico (Real Decreto 88/2026, art. 28.2):</strong> el contrato de suministro es personal y su titular debe ser el usuario efectivo de la energía.</li>
+</ul>
+<p>Es decir: quien paga el consumo es el inquilino, y lo coherente es que el contrato también esté a su nombre. Para hacerlo basta con un <a href="@@guia-titular@@">cambio de titular</a> de la luz y otro del <a href="@@guia-gas@@">gas</a>, que no cortan el suministro.</p>
+<h2>Contrato a nombre del inquilino</h2>
+<ul>
+<li>Las facturas le llegan directamente y las paga desde su cuenta.</li>
+<li>Puede elegir comercializadora, tarifa y <a href="@@guia-potencia@@">potencia</a> sin tener que pedir permiso al propietario.</li>
+<li>Si deja recibos sin pagar, la deuda es suya: la comercializadora se la reclama a él, no al propietario.</li>
+</ul>
+<h2>Contrato a nombre del propietario</h2>
+<ul>
+<li>El propietario mantiene el control del suministro, pero es el <strong>responsable de las deudas</strong>: si el inquilino no paga, la comercializadora le reclama a él.</li>
+<li>Para cambiar de comercializadora o de tarifa, el inquilino necesita su autorización.</li>
+<li>Hay que repercutir cada factura al inquilino, lo que suele generar discusiones si el contrato de alquiler no lo deja claro.</li>
+</ul>
+<div class="nota"><strong>Consejo para la agencia:</strong> incluye en el contrato de alquiler una cláusula que diga quién será el titular de la luz y el gas y en qué plazo se hará el cambio de titular. Y haz una foto de las lecturas de los contadores el día de la entrega de llaves.</div>
+<h2>Qué datos hacen falta para ponerlo a nombre del inquilino</h2>
+<p>Los mismos que en cualquier cambio de titular: nombre y DNI, NIE o pasaporte, el <a href="@@guia-cups@@">CUPS</a> de cada suministro, un IBAN y los datos de contacto. En algunos casos se pide además el contrato de alquiler como prueba de que ocupa la vivienda. Lo tienes todo en la <a href="@@guia-datos@@">checklist de datos</a>, y si el inquilino es extranjero, en la <a href="@@guia-expats@@">guía para inquilinos extranjeros</a>.</p>
+<h2>Cuando el inquilino se va: cambio de titular, no baja</h2>
+<p>Al terminar el alquiler, lo habitual es que el inquilino saliente quiera dar de baja los contratos. Si va a entrar otro inquilino, es mejor no hacerlo: la baja corta el suministro y volver a darlo de alta tiene costes regulados y plazos (lo explicamos en la guía de <a href="@@guia-alta@@">alta de luz en un piso sin suministro</a>). Lo práctico es dejar el contrato activo hasta que el nuevo inquilino haga el cambio de titular, o pasarlo temporalmente a nombre del propietario mientras el piso está vacío.</p>
+<p>Antes de devolver la fianza, el propietario puede pedir al inquilino saliente la última factura pagada, para comprobar que no deja nada pendiente.</p>
+{cta()}'''),
+
+dict(group="guia-obranueva", slug="luz-gas-vivienda-obra-nueva", tag="Obra nueva",
+ h1="Luz y gas en una vivienda de obra nueva: cómo es la primera alta",
+ title="Luz y gas en una vivienda de obra nueva: primera alta",
+ desc="Qué hace falta para dar de alta la luz y el gas en un piso a estrenar: boletín eléctrico, certificado de gas, CUPS, cédula de habitabilidad y plazos para no retrasar la entrega.",
+ resumen="Boletín, certificado de gas, CUPS y cédula: qué pedir a la promotora para que el comprador entre con todo funcionando.",
+ body=f'''<p class="meta">Guía para inmobiliarias que comercializan obra nueva · Actualizada en noviembre de 2026</p>
+<p>En una vivienda de segunda mano casi siempre hay un contrato que pasar a otro nombre. En obra nueva no: la vivienda nunca ha tenido suministro, así que hay que pedir una <strong>primera alta</strong> de luz y, si la hay, de gas. Es un trámite con más pasos que un <a href="@@guia-titular@@">cambio de titular</a> y conviene empezarlo antes de la firma de la escritura.</p>
+<h2>Luz de obra no es luz de la vivienda</h2>
+<p>Durante la construcción, el edificio funciona con un suministro provisional de obra, que es un contrato eventual de menos de doce meses. Ese contrato es de la constructora y no sirve para entrar a vivir. Cada vivienda necesita su propio punto de suministro, con su propio <a href="@@guia-cups@@">CUPS</a>, y su propio contrato a nombre del comprador.</p>
+<p>Normalmente es la promotora quien tramita con la distribuidora la conexión del edificio a la red (la acometida). Cuando la distribuidora asigna el CUPS de cada vivienda, el comprador ya puede contratar la luz.</p>
+<h2>Qué documentos hacen falta para la luz</h2>
+<ul>
+<li><strong>Boletín eléctrico (CIE) de la vivienda:</strong> en obra nueva siempre hace falta. Lo emite la empresa instaladora y se registra en la comunidad autónoma. Indica, además, la potencia máxima que admite la instalación.</li>
+<li><strong>CUPS</strong> de la vivienda.</li>
+<li><strong>Datos del comprador:</strong> nombre, DNI o NIE, IBAN y contacto (ver la <a href="@@guia-datos@@">checklist de datos</a>).</li>
+<li><strong>Cédula de habitabilidad o licencia de primera ocupación,</strong> según la comunidad autónoma (ver más abajo).</li>
+</ul>
+<h2>¿Hace falta cédula de habitabilidad?</h2>
+<p>Depende de la comunidad autónoma. Según la OCU, la mantienen ocho: Cataluña, Navarra, Canarias, Extremadura, Baleares, La Rioja, Asturias y Murcia, y en ellas puede pedirse para dar de alta los suministros. En el resto se ha sustituido por la licencia municipal de primera ocupación o por una declaración responsable. Como los requisitos cambian y cada distribuidora puede pedir documentación distinta, lo seguro es confirmarlo con la promotora antes de dar una fecha de entrega.</p>
+<h2>Qué se paga en la primera alta de luz</h2>
+<p>Son derechos regulados que cobra la distribuidora a través de la factura de la comercializadora: derechos de acceso (unos 19,70 € por kW), de extensión (unos 17,37 € por kW) y de enganche, más IVA. En un edificio nuevo, parte de estos costes puede haberlos asumido ya la promotora al pagar la acometida, así que conviene preguntarle qué está abonado y qué no antes de informar al comprador.</p>
+<h2>Y el gas</h2>
+<p>Si la promoción tiene gas natural, el proceso es parecido:</p>
+<ul>
+<li>La vivienda necesita el <strong>certificado de la instalación de gas</strong>, emitido por un instalador autorizado.</li>
+<li>El comprador contrata con una comercializadora, que pide a la distribuidora el alta y la <strong>puesta en servicio</strong>.</li>
+<li>La distribuidora tiene un plazo máximo de 6 días hábiles para validar la solicitud y otros 6 días hábiles para las comprobaciones de la puesta en servicio.</li>
+</ul>
+<p>El gas tiene un CUPS distinto al de la luz y su propio contrato. Más adelante, la instalación tendrá que pasar la inspección periódica que explicamos en la guía de <a href="@@guia-gas@@">cambio de titular del gas</a>.</p>
+<div class="nota"><strong>Consejo para la agencia:</strong> si comercializas una promoción, pide a la promotora, para cada vivienda, el CUPS de luz y gas, el boletín eléctrico y el certificado de gas, y la fecha prevista de conexión. Con eso puedes tramitar los suministros en cuanto se firme la compraventa.</div>
+<h2>Qué potencia contratar</h2>
+<p>El boletín marca la potencia máxima de la instalación, pero no hace falta contratarla entera. Las viviendas nuevas suelen tener placa de inducción, aerotermia o preinstalación para cargar el coche eléctrico, así que conviene ajustarla al uso real desde el principio, porque después solo se puede cambiar una vez cada 12 meses. Lo explicamos en la guía <a href="@@guia-potencia@@">qué potencia de luz contratar en un piso</a>.</p>
+{cta()}'''),
 ]
 
 for g in GUIAS:

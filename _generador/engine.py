@@ -13,7 +13,7 @@ INSTAGRAM = "https://www.instagram.com/gestionenergia/"
 GOATCOUNTER = "gestionenergia"
 # Clave de Web3Forms (se pide gratis en https://web3forms.com con el email de arriba)
 WEB3FORMS_KEY = "0ca97bbb-d14f-40f3-90f5-8e3803a09660"
-TODAY = "2026-11-19"
+TODAY = "2026-11-20"
 
 PAGES = []
 
