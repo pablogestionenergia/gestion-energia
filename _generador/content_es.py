@@ -212,6 +212,7 @@ def contact_page(lang, group, path, title, desc, h1, lead, crumb, labels, script
 <div><label for="f-tel">{lb["phone"]} <span class="opt">{lb["optional"]}</span></label><input id="f-tel" name="telefono" type="tel" autocomplete="tel" inputmode="tel"></div>
 </div>
 <div><label for="f-tipo">{lb["type"]}</label><select id="f-tipo" name="tipo">{"".join(f"<option>{o}</option>" for o in lb["types"])}</select></div>
+<div><label for="f-origen">{lb["source"]} <span class="opt">{lb["optional"]}</span></label><select id="f-origen" name="como_nos_conocio"><option value="">{lb["choose"]}</option>{"".join(f"<option>{o}</option>" for o in lb["sources"])}</select></div>
 <div><label for="f-msg">{lb["message"]}</label><textarea id="f-msg" name="message" required placeholder="{lb["placeholder"]}"></textarea></div>
 <div class="consent"><input type="checkbox" id="f-ok" name="acepto_privacidad" value="si" required><label for="f-ok" style="font-family:inherit;font-weight:400;color:inherit;margin:0">{lb["consent"]}</label></div>
 <button class="btn btn-verde" type="submit">{lb["send"]}</button>
@@ -223,6 +224,7 @@ def contact_page(lang, group, path, title, desc, h1, lead, crumb, labels, script
 <a class="contact-item" href="tel:+{PHONE}">{TEL} {t["call"]} {PHONE_TXT}</a>
 <a class="contact-item" href="mailto:{EMAIL}">{MAIL} <span class="email">{EMAIL.replace("@","@<wbr>")}</span></a>
 <a class="contact-item" href="{LINKEDIN}" target="_blank" rel="noopener">{LI} LinkedIn<span class="sr-only">{t["newtab"]}</span></a>
+<a class="contact-item" href="{INSTAGRAM}" target="_blank" rel="noopener">{IG} Instagram<span class="sr-only">{t["newtab"]}</span></a>
 <p style="color:var(--texto-suave);margin-top:6px">{lb["reply"]}</p></div>'''
     m = script_msgs
     script = f'''<script>
@@ -243,7 +245,8 @@ contact_page(L, "contacto", "contacto/",
  "Contacto | Gestión Energía", "Escríbenos desde el formulario, por WhatsApp, por teléfono o por email y te enviamos una propuesta para tu inmobiliaria o despacho.",
  "Hablemos de <span>tu cartera</span>", "Cuéntame cómo trabaja tu agencia o tu despacho y te envío una propuesta personalizada con las condiciones.", "Contacto",
  dict(subject="Nuevo contacto desde la web (ES)", name="Nombre", company="Agencia o empresa", optional="(opcional)", phone="Teléfono",
-      type="Soy…", types=["Inmobiliaria","Administrador de fincas","Otro"], message="Mensaje",
+      type="Soy…", types=["Inmobiliaria","Administrador de fincas","Otro"],
+      source="¿Cómo nos has conocido?", choose="Elige una opción", sources=["Instagram","LinkedIn","Google","Recomendación","Otro"], message="Mensaje",
       placeholder="Por ejemplo: cuántas operaciones cerráis al mes y en qué zona trabajáis.",
       consent='He leído y acepto la <a href="@@privacidad@@">política de privacidad</a>.', send="Enviar mensaje",
       direct="O contacta directamente", reply="Respondo personalmente."),
@@ -252,6 +255,7 @@ contact_page(L, "contacto", "contacto/",
       err='No se ha podido enviar. Escríbeme a <a href="mailto:' + EMAIL + '">' + EMAIL + '</a> o por WhatsApp.'))
 
 # ================= LEGALES (solo en castellano) =================
+GC_PRIV = ('<h2>Estadísticas de visitas</h2><p>Para saber cuántas personas visitan la web y desde dónde llegan (por ejemplo, desde Instagram o LinkedIn) usamos GoatCounter, un servicio de estadísticas que no usa cookies ni guarda datos que permitan identificarte. Solo registra datos agregados, como la página visitada, la web de procedencia, el tipo de navegador y el país.</p>' if GOATCOUNTER else '')
 P = lambda s: f'<mark>{s}</mark>'
 page(lang=L, group="aviso", path="aviso-legal/", noindex=True,
  title="Aviso legal | Gestión Energía", desc="Aviso legal del sitio web de Gestión Energía.",
@@ -285,15 +289,15 @@ page(lang=L, group="privacidad", path="privacidad/", noindex=True,
 <h2>Responsable del tratamiento</h2>
 <p>{P("NOMBRE Y APELLIDOS COMPLETOS")} (Gestión Energía), NIF {P("NIF")}, con domicilio en {P("DOMICILIO FISCAL")}. Contacto: <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
 <h2>Qué datos tratamos y para qué</h2>
-<p>Los datos que nos facilitas en el formulario de contacto (nombre, empresa, email, teléfono, tipo de negocio y mensaje), o al escribirnos por email o WhatsApp, se usan únicamente para responder a tu consulta y, si te interesa, enviarte una propuesta de colaboración.</p>
+<p>Los datos que nos facilitas en el formulario de contacto (nombre, empresa, email, teléfono, tipo de negocio, cómo nos has conocido y mensaje), o al escribirnos por email o WhatsApp, se usan únicamente para responder a tu consulta y, si te interesa, enviarte una propuesta de colaboración.</p>
 <h2>Base legal</h2>
 <p>Tu consentimiento, que das al enviar el formulario marcando la casilla correspondiente, y la aplicación de medidas precontractuales a petición tuya.</p>
 <h2>Cuánto tiempo los conservamos</h2>
 <p>Mientras dure la relación o la conversación comercial y, después, durante los plazos legalmente exigibles. Si no llegamos a colaborar, los eliminamos cuando ya no sean necesarios para atender tu consulta.</p>
 <h2>Destinatarios</h2>
-<p>No cedemos tus datos a terceros salvo obligación legal. Para hacer llegar los mensajes del formulario a nuestro correo usamos el servicio Web3Forms, que actúa como encargado del tratamiento. Si nos escribes por WhatsApp o LinkedIn, esas plataformas tratan los datos según sus propias políticas.</p>
+<p>No cedemos tus datos a terceros salvo obligación legal. Para hacer llegar los mensajes del formulario a nuestro correo usamos el servicio Web3Forms, que actúa como encargado del tratamiento. Si nos escribes por WhatsApp, LinkedIn o Instagram, esas plataformas tratan los datos según sus propias políticas.</p>
 <h2>Tus derechos</h2>
 <p>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a <a href="mailto:{EMAIL}">{EMAIL}</a>. Si consideras que no hemos tratado bien tus datos, puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es).</p>
 <h2>Cookies</h2>
-<p>Esta web no utiliza cookies propias ni de analítica o publicidad.</p>
+<p>Esta web no utiliza cookies propias ni de analítica o publicidad.</p>{GC_PRIV}
 </div></div></section>''')

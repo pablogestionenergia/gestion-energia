@@ -7,9 +7,13 @@ PHONE = "34604822007"
 PHONE_TXT = "604 822 007"
 EMAIL = "pablo.gestionenergia@gmail.com"
 LINKEDIN = "https://www.linkedin.com/in/pablo-massera-742a80319/"
+INSTAGRAM = "https://www.instagram.com/gestionenergia/"
+# Estadísticas sin cookies (GoatCounter). Crea una cuenta gratis en https://www.goatcounter.com,
+# pon aquí el código elegido (por ejemplo "gestionenergia") y regenera. Vacío = sin estadísticas.
+GOATCOUNTER = ""
 # Clave de Web3Forms (se pide gratis en https://web3forms.com con el email de arriba)
 WEB3FORMS_KEY = "0ca97bbb-d14f-40f3-90f5-8e3803a09660"
-TODAY = "2026-11-18"
+TODAY = "2026-11-19"
 
 PAGES = []
 
@@ -33,6 +37,7 @@ WA = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-
 TEL = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.161 15.161 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1.01A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1c0 9.39 7.61 17 17 17c.55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>'
 MAIL = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5l-8-5V6l8 5l8-5v2z"/></svg>'
 LI = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.640-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>'
+IG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.88 5.88 0 0 0-2.13 1.38A5.88 5.88 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13a5.88 5.88 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.88 5.88 0 0 0 2.13-1.38 5.88 5.88 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.88 5.88 0 0 0-1.38-2.13A5.88 5.88 0 0 0 19.86.63C19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.41-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>'
 I_EURO = '<svg class="icon-gold" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 I_CLOCK = '<svg class="icon-gold" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 I_SHIELD = '<svg class="icon-gold" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/></svg>'
@@ -150,7 +155,7 @@ def org_jsonld():
         "knowsLanguage": ["es", "ca", "en"],
         "serviceType": ["Alta de suministro de luz y gas", "Cambio de titular de luz y gas", "Gestión de incidencias de suministro"],
         "founder": {"@type": "Person", "name": "Pablo Massera", "jobTitle": "Fundador", "sameAs": [LINKEDIN]},
-        "sameAs": [LINKEDIN],
+        "sameAs": [INSTAGRAM, LINKEDIN],
     }
 
 def depth(path):
@@ -187,6 +192,7 @@ def render(p):
         cur = ' aria-current="page"' if g == navgroup else ""
         links += f'<a href="{R}{tp["path"]}"{cur}>{lab}</a>'
 
+    gc_script = (f'<script data-goatcounter="https://{GOATCOUNTER}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>\n' if GOATCOUNTER else "")
     ld = [org_jsonld()]
     if p["faq"]:
         ld.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
@@ -269,6 +275,7 @@ def render(p):
 <div class="wrap footer-inner">
 <span>© 2026 Gestión Energía · {t["footer"]}</span>
 <span class="footer-links">
+<a href="{INSTAGRAM}" target="_blank" rel="noopener">Instagram{nt}</a>
 <a href="{LINKEDIN}" target="_blank" rel="noopener">LinkedIn{nt}</a>
 <a href="mailto:{EMAIL}">Email</a>
 <a href="{R}{legal_es["path"]}">{t["legal"]}</a>
@@ -284,6 +291,6 @@ h.querySelectorAll('.header-right a').forEach(function(a){{a.addEventListener('c
 document.addEventListener('keydown',function(e){{if(e.key==='Escape'&&h.classList.contains('open')){{h.classList.remove('open');b.setAttribute('aria-expanded','false');b.focus();}}}});}})();
 </script>
 {p.get("script","")}
-</body>
+{gc_script}</body>
 </html>
 '''
